@@ -1,12 +1,5 @@
 import DetailProduct from "./DetailProduct";
-import styled from "styled-components";
-
-const ProdContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-`;
+import { ProdContainer } from "./ProductStyle";
 
 function Product({
   bookMark,

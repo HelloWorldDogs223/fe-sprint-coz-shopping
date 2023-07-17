@@ -1,64 +1,15 @@
 import { useEffect, useState } from "react";
-import styled from "styled-components";
 import Modal from "./Modal";
-
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
-  width: 264px;
-  height: 300px;
-  margin: 0 24px;
-  position: relative;
-`;
-
-const PContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: end;
-  width: 100%;
-  font-size: 0.9rem;
-  font-weight: bold;
-  height: 54px;
-  position: absolute;
-  top: 85%;
-`;
-
-const TitleContainer = styled.div`
-  display: flex;
-  padding-top: 5px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: start;
-  width: 100%;
-`;
-
-const ImageCotainer = styled.div`
-  position: absolute;
-`;
-
-const StarContainer = styled.div`
-  position: absolute;
-  top: 80%;
-  left: 85%;
-`;
-
-const ProductImg = styled.img`
-  width: 264px;
-  height: 210px;
-  border-radius: 10%;
-  content: url(${(props) => props.url};);
-  cursor: pointer;
-`;
-const BlueP = styled.p`
-  color: blue;
-`;
-const StarImg = styled.img`
-  cursor: pointer;
-  position: absolute;
-`;
+import {
+  Container,
+  PContainer,
+  TitleContainer,
+  ImageCotainer,
+  StarContainer,
+  ProductImg,
+  BlueP,
+  StarImg,
+} from "./DetailProductStyle";
 
 function DetailProduct({
   elem,
